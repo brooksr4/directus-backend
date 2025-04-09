@@ -5,6 +5,9 @@ services:
     plan: free
     buildCommand: npm install
     startCommand: npx directus start
+    build:
+      environment:
+        NODE_VERSION: 18
     envVars:
       - key: DB_CLIENT
         value: pg
