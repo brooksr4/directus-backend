@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: directus-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npx directus start
+    envVars:
+      - key: DB_CLIENT
+        value: pg
+      - key: DB_HOST
+        value: db.hprvtfozvlnqglvtqsjb.supabase.co
+      - key: DB_PORT
+        value: 5432
+      - key: DB_DATABASE
+        value: postgres
+      - key: DB_USER
+        value: postgres
+      - key: DB_PASSWORD
+        value: IOeF85RNMLnqEoHP
+      - key: KEY
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhwcnZ0Zm96dmxucWdsdnRxc2piIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQyMjgwODUsImV4cCI6MjA1OTgwNDA4NX0.qXu0P-IFFu0bbXNAqHxkenc4HPQqE3aIvVB0y4hx46M
+      - key: SECRET
+        value: dmngysSFT0oAm9XhbIgwTprDjAHwbhdCnCqb47Dqz20MCAq+1xW09uA3ZvOJPs/Rd2m3GjabzHEOTwRD7L95ew==
+      - key: ADMIN_EMAIL
+        value: ryan.brooks@hardknocklabs.com
+      - key: ADMIN_PASSWORD
+        value: 1%PD2zf8Xg
